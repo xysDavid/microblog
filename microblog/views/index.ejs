@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<% include layout_head %>
+<body>
+
+	<% include layout_body_header %>
+		
+	<div id="container" class="container">
+
+		<div class="hero-unit">
+			<h1>Welcome to Microblog</h1>
+			<p>This Microblog is base on Node.js</p>
+			<p>
+				<a href="/login" class="btn btn-primary btn-large">Login</a>
+				<a href="/reg" class="btn btn-large">Register</a>
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="span4">
+				<h2>AAAAA</h2>
+				<p>AAAAA</p>
+			</div>
+			<div class="span4">
+				<h2>BBBBB</h2>
+				<p>BBBBB</p>
+			</div>
+			<div class="span4">
+				<h2>CCCCC</h2>
+				<p>CCCCC</p>
+			</div>
+		</div>
+
+		<hr>
+		<footer>
+			<p><a href="http://www.xysdavid.com/" target="_blank">xysDavid</a> 2014</p>
+		</footer>
+	</div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
 </html>
+
